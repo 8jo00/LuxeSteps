@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.webp" alt="LuxeSteps Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Shoes..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Comfort Knit Flat">
+            <img src="sh1.jpg" alt="Comfort Knit Flat">
+            <h3>Comfort Knit Flat</h3>
+            <p>Sizes: 5-10<br>
+               Description:<br>
+                A breathable, slip-on knit flat designed for all-day comfort. Perfect for casual wear with a stylish yet practical look.</p>
+            <span>$75 BZD</span>
+            <button onclick="addToCart('Comfort Knit Flat', 75)">Add to Cart</button>
+        </div>
+           <div class="product" data-name="Luxe Chain Loafer">
+               <img src="sh2.jpg" alt="Luxe Chain Loafer">
+               <h3>Luxe Chain Loafer</h3>
+               <p>Sizes: 6-11<br>
+                   Description:<br>
+                    A sleek black leather loafer featuring a gold chain detail for a sophisticated touch. Ideal for work or formal occasions.</p>
+               <span>$120 BZD</span>
+               <button onclick="addToCart('Luxe Chain Loafer', 120)">Add to Cart</button>
+           </div>
+         
+        <div class="product" data-name=" Chic Glossy Pink">
+            <img src="sh3.jpg" alt=" Chic Glossy Pink">
+            <h3> Chic Mary Jane</h3>
+            <p>Sizes: 5-9<br>
+                Description:<br>
+             A trendy and feminine glossy pink high heel with a sleek pointed toe and a comfortable stiletto heel, perfect for formal occasions or adding a pop of color to your outfit.
+            </p>
+            <span>$95 BZD</span>
+            <button onclick="addToCart('Chic Glossy Pink', 95)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Classic Comfort Black">
+            <img src="sh4.jpg" alt="Classic Comfort Black">
+            <h3>Classic Comfort Black</h3>
+            <p>Size: Available in sizes 6–10<br>
+                Description:<br>
+                 A stylish and comfortable black leather heel with a medium block heel, ideal for work or casual wear. Features a decorative front detail for added elegance.</p>
+            <span>$85 BZD</span>
+            <button onclick="addToCart('Classic Comfort Black', 85)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" Chic Mary Jane">
+            <img src="sh5.jpg" alt=" Chic Mary Jane">
+            <h3> Chic Mary Jane</h3>
+            <p>Sizes: 5-9<br>
+                Description:<br>
+                 A bold red Mary Jane flat with a glossy finish and delicate strap. Adds a vintage charm to any outfit.The vibrant sapphire stone takes center stage, while the polished silver chain adds a refined touch. Perfect for adding a hint of sophistication to any outfit.
+            </p>
+            <span>$95 BZD</span>
+            <button onclick="addToCart(' Chic Mary Jane', 95)">Add to Cart</button>
+            </div>
+        <div class="product" data-name="Sky Breeze Ballet Flat">
+            <img src="sh6.jpg" alt="Sky Breeze Ballet Flat">
+            <h3>Sky Breeze Ballet Flat</h3>
+            <p>Sizes: 6-10<br>
+                Description: <br>
+                A comfortable, perforated ballet flat in a calming blue tone. Lightweight and perfect for everyday wear.</p>
+            <span>$80 BZD</span>
+            <button onclick="addToCart('Sky Breeze Ballet Flat', 80)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LuxeSteps. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

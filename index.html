@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeSteps </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.webp" alt="LuxeSteps Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Shoes..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Slideshow -->
+    <section class="welcome-section">
+        <div class="slideshow-container">
+            <img src="s1.jpg" class="active" alt="shoe 1">
+            <img src="s2.jpg" alt="shoe 2">
+            <img src="s3.jpg" alt="shoe 3">
+        </div>
+        <div class="welcome-title">
+            <h1>LuxeSteps</h1>
+            <h4>Step into Style, Stride with Confidence</h4>
+        </div>
+    </section>
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">LuxeSteps is a premier destination for women’s footwear, offering a curated collection of stylish, high-quality shoes designed to elevate every step. From chic heels to comfortable flats, we believe every woman deserves to feel confident and empowered in her choice of shoes. Our mission is to bring you the latest trends, timeless classics, and exceptional customer service, ensuring you find the perfect pair for every occasion. At LuxeSteps, we’re more than just a shoe reseller – we’re your partner in stepping into your best self.</p>
+
+
+
+
+ <!-- Product Catalog -->
+ <h1 class="best">Best Sellers</h1>
+ <section id="catalog">
+     <div class="product" data-name="Comfort Knit Flat">
+         <img src="sh1.jpg" alt="Comfort Knit Flat">
+         <h3>Comfort Knit Flat</h3>
+         <p>Sizes: 5-10<br>
+            Description:<br>
+             A breathable, slip-on knit flat designed for all-day comfort. Perfect for casual wear with a stylish yet practical look.</p>
+         <span>$75 BZD</span>
+         <button onclick="addToCart('Comfort Knit Flat', 75)">Add to Cart</button>
+     </div>
+        <div class="product" data-name="Luxe Chain Loafer">
+            <img src="sh2.jpg" alt="Luxe Chain Loafer">
+            <h3>Luxe Chain Loafer</h3>
+            <p>Sizes: 6-11<br>
+                Description:<br>
+                 A sleek black leather loafer featuring a gold chain detail for a sophisticated touch. Ideal for work or formal occasions.</p>
+            <span>$120 BZD</span>
+            <button onclick="addToCart('Luxe Chain Loafer', 120)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" Chic Glossy Pink">
+            <img src="sh3.jpg" alt=" Chic Glossy Pink">
+            <h3> Chic Mary Jane</h3>
+            <p>Sizes: 5-9<br>
+                Description:<br>
+             A trendy and feminine glossy pink high heel with a sleek pointed toe and a comfortable stiletto heel, perfect for formal occasions or adding a pop of color to your outfit.
+            </p>
+            <span>$95 BZD</span>
+            <button onclick="addToCart('Chic Glossy Pink', 95)">Add to Cart</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LuxeSteps. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
